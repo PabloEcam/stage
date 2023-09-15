@@ -5,6 +5,8 @@ import { Perf } from 'r3f-perf'
 import Room04 from './components/models/Room-04'
 import Sensorama2 from './components/models/Sensorama-01-2'
 import CajaMexicana from './components/models/Caja-mexicana-maleta-01'
+import CajaMexicanaLP from './components/models/Caja-mexicana-maleta-LP-01'
+import CajaMexicanaLPAni from './components/models/Caja-mexicana-maleta-LP-01-ani'
 
 function App() {
   return (
@@ -39,9 +41,11 @@ function App() {
         <boxGeometry args={[1, 1, 1]} />
         <meshStandardMaterial color={'blue'} />
       </mesh> */}
-      <Sensorama2 position={[-6.5, 0, 0]} />
-      <Room04 position={[-2, 0, 0]} />
+      {/*  <Sensorama2 position={[-6.5, 0, 0]} />
+      <Room04 position={[-2, 0, 0]} /> */}
       <CajaMexicana position={[-2, -1.47, 1.5]} />
+      <CajaMexicanaLP position={[0, -1.47, 1.5]} />
+      <CajaMexicanaLPAni position={[2, -1.47, 1.5]} />
     </Canvas>
   )
 }
